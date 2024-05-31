@@ -1,0 +1,37 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: profile;
+  padding: 30px;
+  border: none;
+  }
+  
+  .photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 8px solid #333333;
+    object-fit: cover;
+  }
+  
+  .name {
+    font-size: 1.25em;
+    color: #333333;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .title {
+    font-size: 1em;
+    color: #333333;
+    margin: 0;
+  }
+
+  .techStack {
+    font-size: 0.95em;
+    color: #333333;
+    margin: 0;
+  }
+  

@@ -1,0 +1,58 @@
+.title {
+  padding: 10px 25px 0 25px;
+}
+
+.techStack {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0 25px 25px 30px;
+}
+
+.techItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.techIcon {
+  width: 48px;
+  height: 48px;
+}
+
+.reduxLogo {
+  width: 36px;
+  height: 36px;
+}
+
+.techItem .fa-icon {
+  transition: transform 0.2s;
+}
+
+.techItem:hover .fa-icon {
+  transform: scale(1.1);
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.techItem:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}

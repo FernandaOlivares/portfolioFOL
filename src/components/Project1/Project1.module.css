@@ -1,0 +1,60 @@
+.project{
+
+}
+.content {
+
+}
+
+.projectDescription{
+  padding: 15px 30px 15px 30px;
+}
+
+.imageWrapper {
+  padding-top: 35px;
+  width: 50%;
+}
+
+.image {
+  width: 50%;
+  height: auto;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid whitesmoke;
+}
+
+.projectLinks {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 0 30px 30px 30px;
+  gap: 15px
+}
+
+.iconLink {
+  color: #fff;
+  text-decoration: none;
+}
+.iconLink:hover {
+
+}
+
+.liveDemoButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: light;
+  color: whitesmoke;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px solid #fff;
+}
+
+.liveDemoButton .fa-play-circle {
+  color: #fff;
+}
+
+.liveDemoButton:hover {
+  background-color: white;
+}

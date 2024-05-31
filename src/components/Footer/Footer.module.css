@@ -1,0 +1,15 @@
+.footer {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  grid-area: footer;
+  border-radius: 25px;
+}
+
+.contact{
+  font-size: 1.1em;
+}
+
+.madeWithLove{
+  font-size: 0.8em;
+}

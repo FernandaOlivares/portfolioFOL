@@ -1,0 +1,105 @@
+body {
+  margin: 20px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: 60vw;
+  border: 1px solid black;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+    "header header header"
+    "profile project1 project1"
+    "about project2 project2"
+    "techStack techStack techStack"
+    "footer footer footer";
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+
+.header {
+  grid-area: header;
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: pink;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.header:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #e75480; 
+}
+
+.profile {
+  grid-area: profile;
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: #fffacd;
+}
+.profile:hover {
+  background:  #ffecb3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.about {
+  grid-area: about;
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: lightskyblue;
+}
+.about:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: lightcyan;
+}
+
+.techStack {
+  grid-area: techStack;
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: #98FB98;
+}
+.techStack:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: lightgreen;
+}
+
+.project1 {
+  grid-area: project1;
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: turquoise;
+}
+.project1:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #48d1cc;
+}
+
+.project2 {
+  grid-area: project2;
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: lightcoral;
+}
+.project2:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #FF6B6B;
+}
+
+.footer {
+  grid-area: footer;
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: #333;
+}
+.footer:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #444;
+}
+
