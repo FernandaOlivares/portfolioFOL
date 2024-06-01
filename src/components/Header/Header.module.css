@@ -1,5 +1,36 @@
 .header {
   color: #333;
   text-align: center;
-  border-radius: 25px;
+  font-size: 1.2em;
+  padding: 0.1em;
+}
+
+@media (width < 1200px){
+  .header {
+    font-size: 1em;
+    color: #333333;
+    margin: 0;
+    padding: 0.1em;
+  }
+
+}
+
+@media (width < 600px){
+  .header {
+    font-size: 0.6em;
+    color: #333333;
+    margin: 0;
+    padding: 1.5em;
+  }
+
+}
+
+@media (width < 400px){
+  .header {
+    font-size: 0.4em;
+    color: #333333;
+    margin: 0;
+    padding: 2em;
+  }
+
 }

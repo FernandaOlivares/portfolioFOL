@@ -27,6 +27,7 @@
     font-size: 1em;
     color: #333333;
     margin: 0;
+    text-align: center;
   }
 
   .techStack {
@@ -35,3 +36,31 @@
     margin: 0;
   }
   
+
+
+@media (width < 1200px){
+  .header {
+    font-size: 1em;
+    color: #333333;
+    margin: 0;
+  }
+
+}
+
+@media (width < 600px){
+  .header {
+    font-size: 1em;
+    color: #333333;
+    margin: 0;
+  }
+
+}
+
+@media (width < 400px){
+  .header {
+    font-size: 0.4em;
+    color: #333333;
+    margin: 0;
+  }
+
+}
