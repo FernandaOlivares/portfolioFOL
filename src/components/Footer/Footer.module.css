@@ -11,5 +11,30 @@
 }
 
 .madeWithLove{
-  font-size: 0.8em;
+  font-size: 0.9em;
+}
+
+@media (width < 1200px){
+  .contact{
+    font-size: 1.1em;
+  }
+
+}
+
+@media (width < 600px){
+  .contact{
+    font-size: 1.1em;
+  }
+
+}
+
+@media (width < 400px){
+  .footer {
+    padding: 1.5em;
+  }
+  .contact{
+    font-size: 0.9em;
+    word-break: break-word;
+  }
+
 }

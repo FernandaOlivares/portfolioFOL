@@ -103,3 +103,33 @@ body {
   background-color: #444;
 }
 
+
+@media (width < 1200px){
+  .container {
+    width: 75vw;
+  }
+
+}
+
+@media (width < 600px){
+  .container {
+    width: 60vw;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header header header"
+    "profile profile profile"
+    "project1 project1 project1"
+    "project2 project2 project2"
+    "about about about"
+    "techStack techStack techStack"
+    "footer footer footer";
+  }
+
+}
+
+@media (width < 400px){
+  .container {
+    width: 90vw;
+  }
+
+}
