@@ -43,7 +43,7 @@ const Project1 = () => {
       </div>
       <div className={styles.projectDescription}>
         <h2>Real Estate Project_</h2>
-        <p>Leadership, Design, and Frontend Development for a web application for a real estate company with 15 years of experience</p>
+        <p>Leadership, Design, and Frontend Development for a web application for a real estate company with 15 years of experience.</p>
       </div>
       </div>
       <div className={styles.projectLinks}>
