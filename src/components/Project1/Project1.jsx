@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Slider from 'react-slick';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faVimeo } from '@fortawesome/free-brands-svg-icons';
-import { faPlayCircle, faLink } from '@fortawesome/free-solid-svg-icons';
+import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 import styles from './Project1.module.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -61,7 +61,7 @@ const Project1 = () => {
           )}
       <div className={styles.projectDescription}>
         <h2>Real Estate Project_</h2>
-        <p>Leadership, Design, and Frontend Development for a web application for a real estate company with 15 years of experience.</p>
+        <p>Led, designed, and developed the frontend of a web application for a real estate company with 15 years of experience.</p>
       </div>
       </div>
       <div className={styles.projectLinks}>
