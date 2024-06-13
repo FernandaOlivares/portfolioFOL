@@ -1,22 +1,16 @@
 .about {
-    padding: 35px;
-    grid-area: about;
-  }
-  .name {
-    font-size: 1.25em;
-    color: #333333;
-    text-align: center;
-    margin: 0;
+  padding: 25px 40px 15px 40px;
+  grid-area: about;
   }
   
-  .title {
-    font-size: 1.5em;
-    color: #333333;
-    margin: 0;
-  }
+.title {
+  font-size: 1.5em;
+  color: #333333;
+  margin-bottom: 0.5em;
+}
 
-  .body {
-    font-size: 0.95em;
-    color: #333333;
-    margin: 0;
-  }  
+.body {
+  font-size: 0.95em;
+  color: #333333;
+  margin: 0;
+}  

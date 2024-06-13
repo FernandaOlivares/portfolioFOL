@@ -1,36 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
+
+
 .header {
   color: #333;
   text-align: center;
   font-size: 1.2em;
+  padding: 0.01em;
+}
+
+.title {
+}
+
+.thinkTitle, .believeTitle, .codeTitle, .separator {
+  display: inline-block;
   padding: 0.1em;
+}
+
+.separator{
+  font-weight: 250;
+}
+
+.thinkTitle{
+  font-family: 'Dancing Script', monospace;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.believeTitle{
+  font-family: 'Ubuntu Sans', monospace;
+  font-weight: 400;
+}
+
+.codeTitle{
+  font-family: 'Inconsolata', monospace;
+  font-weight: 300;
 }
 
 @media (width < 1200px){
   .header {
-    font-size: 1em;
-    color: #333333;
+    font-size: 0.9em;
     margin: 0;
     padding: 0.1em;
   }
-
 }
 
 @media (width < 600px){
   .header {
     font-size: 0.6em;
-    color: #333333;
     margin: 0;
-    padding: 1.5em;
+    padding: 0.1em;
   }
-
 }
 
 @media (width < 400px){
   .header {
-    font-size: 0.4em;
-    color: #333333;
+    font-size: 0.6em;
     margin: 0;
-    padding: 2em;
+    padding: 0.1em;
   }
-
 }
