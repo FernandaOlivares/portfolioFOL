@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import Slider from 'react-slick';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faVimeo } from '@fortawesome/free-brands-svg-icons';
@@ -9,6 +10,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import LandingF1 from '../../assets/Project2Pics/LandingF1.png'
 import HomeF1 from '../../assets/Project2Pics/HomeF1.png'
 import FormF1 from '../../assets/Project2Pics/FormF1.png'
+import ImagesSlider from '../../components/ImagesSlider/ImagesSlider.jsx';
 
 const images = [
   LandingF1,
@@ -28,19 +30,34 @@ const Project2 = () => {
     arrows: false,
     adaptiveHeight: true,
   };
+  const [isPopupOpenImage, setIsPopupOpenImage] = useState(false);
+
+  const openImagePopup = () => {
+    setIsPopupOpenImage(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpenImage(false);
+  };
 
   return (
     <div className={styles.project}>
       <div className={styles.content}>
       <div className={styles.slider}>
         <Slider {...settings}>
-          {images.map((image, index) => (
+        {images.map((image, index) => (
             <div key={index} className={styles.imageWrapper}>
-              <img src={image} alt={`Project Image ${index + 1}`} className={styles.image} />
+              <img src={image ? image : 'Picture not found'} alt={`Project Image ${index + 1}`} className={styles.image}  onClick={openImagePopup}/>
             </div>
           ))}
         </Slider>
       </div>
+      {isPopupOpenImage && (
+            <div className={styles.popupContainer}>
+              <ImagesSlider images={images} />
+              <button className={styles.closeButton} onClick={closePopup}> X </button>
+            </div>
+          )}
       <div className={styles.projectDescription}>
         <h2>F1 - Driver Project_</h2>
         <p>Passionate about ongoing learning and applying best development practices, I continuously seek to improve my skills. I initiated my solo project, F1 - LEGENDS, where I gained valuable experience using external APIs to fetch data, implement filters, controlled forms and manage databases and models.</p>

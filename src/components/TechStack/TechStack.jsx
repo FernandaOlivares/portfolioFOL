@@ -2,8 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faJs, faReact, faHtml5, faCss3Alt, faNodeJs, faGitAlt } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
-import reduxLogo from '../../assets/reduxLogo.svg';
-import expressjsLogo from '../../assets/expressjsLogo.svg';
+import reduxLogo from '../../assets/techLogos/reduxLogo.svg';
+import expressjsLogo from '../../assets/techLogos/expressjsLogo.svg';
 import styles from './TechStack.module.css';
 
 const techs = [

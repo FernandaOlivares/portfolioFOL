@@ -1,12 +1,5 @@
-.project{
-
-}
-.content {
-
-}
-
 .projectDescription{
-  padding: 15px 30px 15px 30px;
+  padding: 15px 40px 15px 40px;
 }
 
 .imageWrapper {
@@ -21,6 +14,11 @@
   margin-left: auto;
   margin-right: auto;
   border: 3px solid whitesmoke;
+
+}
+
+.image:hover {
+  cursor: pointer;
 }
 
 .projectLinks {
@@ -34,9 +32,6 @@
 .iconLink {
   color: #fff;
   text-decoration: none;
-}
-.iconLink:hover {
-
 }
 
 .liveDemoButton {
@@ -57,4 +52,40 @@
 
 .liveDemoButton:hover {
   background-color: white;
+}
+
+.popupContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeButton {
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.closeButton:hover {
+  background-color: rgb(113, 107, 107); 
+  color: #fff;
+
 }
